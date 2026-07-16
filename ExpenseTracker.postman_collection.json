@@ -1,0 +1,120 @@
+{
+  "info": {
+    "_postman_id": "64861186-89bc-4956-b981-9a863f5c02b1",
+    "name": "ExpenseTracker",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "26153035"
+  },
+  "item": [
+    {
+      "name": "register",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Sahana\",\r\n    \"email\": \"sahana.r@gmail.com\",\r\n    \"password\": \"abc\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "getAllExpense",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiNTU3YmQ2My04ZDNlLTRjNmYtYjA1MC1mMDdlNzZjOWI3NGYiLCJpYXQiOjE3ODQxNzE3NDYsImV4cCI6MTc4NDE3NTM0Nn0.CdIMjOTJsi_5wdmDNJ4syotwPQm4NgDfgldI2CcaT4g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/getAllExpenses",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "getAllExpenses"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "addExpense",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNTY1YTE2NC04OWZhLTRmMzEtYjI5Yi00MWIyOGRjOWY0NmEiLCJpYXQiOjE3ODQxNzU3NzEsImV4cCI6MTc4NDE3OTM3MX0.15ZJv-hyVGoalLhTzYdKgZuSttRuKWCv8PJB-vdtH6M",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"description\": \"lunch\",\r\n    \"cost\":50\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/addExpneses",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "addExpneses"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
