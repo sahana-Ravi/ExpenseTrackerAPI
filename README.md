@@ -154,17 +154,6 @@ This project uses **Spring Security** along with a custom JWT implementation to 
 
 ---
 
-## Expense Filters
-
-| Endpoint | Description |
-|----------|-------------|
-| `/expenses?filter=week` | Expenses from the past week |
-| `/expenses?filter=month` | Expenses from the past month |
-| `/expenses?filter=3months` | Expenses from the last 3 months |
-| `/expenses?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd` | Expenses within a custom date range |
-
----
-
 # 📚 What I Learned
 
 Developing this project helped me strengthen my understanding of:
@@ -185,11 +174,4 @@ Developing this project helped me strengthen my understanding of:
 
 ---
 
-<div align="center">
-
-### ⭐ If you found this project interesting, consider giving it a Star!
-
-**"Secure your expenses. Simplify your spending."** 💰
-
-</div>
 https://roadmap.sh/projects/expense-tracker-api
